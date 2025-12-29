@@ -21,7 +21,7 @@ func main() {
 		log.Fatalln("Tidak ada arguments")
 	}
 	ctx := context.Background()
-	if *jobs == "disactive_sch" {
+	if *jobs == "disactive-sch" {
 		controller := router.DisactiveSCHInit()
 		controller.DisactiveSch(ctx, poolData)
 	}
